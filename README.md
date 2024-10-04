@@ -15,5 +15,5 @@ The Senior Launcher is a very lightweight and simple Android Launcher. It is mea
 #### -Calendar
 #### -Google Maps
 
-### Copztight Notice: 
+### Copyright Notice: 
 This Code is under copyright of Flaggshipp. If you want to change something and modify this App you need to send me an email and tell what you modified. You can freely change the App Names and publish the changes.
