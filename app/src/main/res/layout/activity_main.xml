@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#000000"> <!-- Schwarzer Basis-Hintergrund -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Innenabstand -->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="7"
+            android:columnCount="2"
+            android:layout_gravity="center"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:rowOrderPreserved="false"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <!-- Panel 1 -->
+            <GridLayout
+                android:id="@+id/telephone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/telephone" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Telephone"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <!-- Panel 2 -->
+            <GridLayout
+                android:id="@+id/contacts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/contacs" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Contacs"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <!-- Panel 3 -->
+            <GridLayout
+                android:id="@+id/whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/whatsapp" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="WhatsApp"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <!-- Panel 4 -->
+            <GridLayout
+                android:id="@+id/settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/settings" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Settings"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <!-- Panel 5 -->
+            <GridLayout
+                android:id="@+id/photos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/photos" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Photos"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <!-- Panel 6 -->
+            <GridLayout
+                android:id="@+id/google"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/google" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Google"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <!-- Panel 7 -->
+            <GridLayout
+                android:id="@+id/clock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/clock" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Clock"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <!-- Panel 8 -->
+            <GridLayout
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/camera" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Camera"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/calc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/calc" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Calculator"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                </GridLayout>
+
+            <GridLayout
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gmail" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="E-Mail"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sms" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="SMS"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/calender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/calender" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Kalender"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/maps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="#B0B0B0"> <!-- Grauer Hintergrund für jedes GridLayout -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/maps" /> <!-- Beispiel-Icon -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Google Maps"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+            </GridLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
