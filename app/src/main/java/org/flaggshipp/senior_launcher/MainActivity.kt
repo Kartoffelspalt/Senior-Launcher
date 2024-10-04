@@ -94,15 +94,13 @@ class MainActivity : AppCompatActivity() {
         val packageManager = packageManager
         val apps = packageManager.getInstalledApplications(PackageManager.GET_META_DATA)
 
-        var found = false // Flag, um zu überprüfen, ob die App gefunden wurde
+        var found = false
 
         for (app in apps) {
             val label = packageManager.getApplicationLabel(app).toString()
-            Log.d("AppSearch", "Gefundener App-Name: $label") // Logging der gefundenen Apps
 
-            // Suche nach der App basierend auf dem Namen
             if (label.equals(appName, ignoreCase = true)) {
-                found = true // Setze das Flag, wenn die App gefunden wird
+                found = true
                 val intent = packageManager.getLaunchIntentForPackage(app.packageName)
                 if (intent != null) {
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -112,9 +110,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Wenn die App nicht gefunden wurde
         if (!found) {
-            Toast.makeText(this, "App '$appName' nicht gefunden", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "App '$appName' couldnt be found", Toast.LENGTH_LONG).show()
         }
     }
 
